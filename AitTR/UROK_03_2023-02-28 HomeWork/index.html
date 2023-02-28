@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Homework</title>
+</head>
+<body>
+<form action="">
+<table border="5" cellspasing="1">
+    <tr>
+        <td colspan="2">
+        
+        <fieldset>
+            <legend>Пользователь</legend>
+            
+                <label for="username">Имя:</labe>
+                <br>
+                <input type="text" name="user" id="username">
+                <br>    
+                <label for="email">Email</label>
+                <br>
+                <input type="email" name="email" id="email">
+                <br>
+                <label for="tel">Мобильный:</label>
+                <br>
+                <input type="tel" name="tel" id="tel">
+            </fieldset>        
+        
+        </td>
+    </tr>
+    <tr>
+        <td>
+                <fieldset>                    
+                    <legend>Интересы</legend>
+                    <label><input type="checkbox" name="FrontEnd" id="FrontEnd" checked> FrontEnd</label>
+                    <br>
+                    <label><input type="checkbox" name="BackEnd" id="BackEnd" checked> BackEnd</label>
+                    <br>
+                    <label><input type="checkbox" name="qa" id="qa" checked>QA</label>
+                    <br>
+                    <label><input type="checkbox" name="database" id="database"> Database</label>
+                    <br>
+                    <input type="checkbox" name="DevOps" id="DevOps">
+                    <label for="DevOps">DevOps</label>
+                </fieldset>
+               
+        </td>
+        <td>
+                <fieldset>
+                    <legend>Занятия</legend>
+                    <label><input type="radio" name="morn" value="1" id="morning" checked> Утром</label>
+                    <label><input type="radio" name="morn" value="2" id="afterning">Вечером</label> 
+                    <br>
+                    <label><input type="radio" name="day" value="1" id="3d"> 3 раза в неделю</label>
+                    <label><input type="radio" name="day" value="2" id="alD"> каждый день</label>
+                </fieldset> 
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>Выбирете ваш уровень владения компьютером</p>
+        </td>
+        <td>
+            <select name="pcLevels" id="pcLevels">
+                <option value="0">Выбирете уровень</option>
+                <option value="1">Комп это что???</option>
+                <option value="2">могу только открыть Браузер</option>
+                <option value="3">могу поставить винду и программки</option>
+                <option value="4">могу настроить операционную систему как мне надо</option>
+                <option value="5">могу писать КОД</option> 
+            </select>
+        </td>
+    </tr>
+    
+    <tr>
+        <td colspan="2">
+            <label for="learningObjectives">Цели обучения</label>
+            <textarea name="learningObjectives" id="learningObjectives" cols="75" rows="5" maxlength="200" wrap="soft" placeholder="на пример: Хочу Бали"></textarea>
+        </td>
+    </tr>
+</table>
+<button type="submit">Отправить</button>
+<button type="reset">Отказаться</button>
+</form>    
+</body>
+</html>

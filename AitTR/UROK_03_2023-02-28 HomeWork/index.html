@@ -8,24 +8,24 @@
 </head>
 <body>
 <form action="">
-<table border="5" cellspasing="1">
+<table border="1" cellspasing="1">
     <tr>
         <td colspan="2">
         
         <fieldset>
             <legend>Пользователь</legend>
             
-                <label for="username">Имя:</labe>
+                <label for="username"><b>*Имя:</b></labe>
                 <br>
-                <input type="text" name="user" id="username">
+                <input type="text" name="user" id="username"required>
                 <br>    
-                <label for="email">Email</label>
+                <label for="email"><b>*Email:</b></label>
                 <br>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email"required>
                 <br>
-                <label for="tel">Мобильный:</label>
+                <label for="tel"><b>*Мобильный:</b> </label>
                 <br>
-                <input type="tel" name="tel" id="tel">
+                <input type="tel" name="tel" id="tel" required>
             </fieldset>        
         
         </td>
@@ -64,7 +64,7 @@
         </td>
         <td>
             <select name="pcLevels" id="pcLevels">
-                <option value="0">Выбирете уровень</option>
+                <option value="0" >Выбирете уровень</option>
                 <option value="1">Комп это что???</option>
                 <option value="2">могу только открыть Браузер</option>
                 <option value="3">могу поставить винду и программки</option>

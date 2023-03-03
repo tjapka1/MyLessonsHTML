@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
     <title>Forms Homework</title>
 </head>
 <body>
+    <p class="poiner">Lorem, ipsum dolor sit amet <b> consectetur </b>adipisicing elit. <br> Enim labore reprehenderit eveniet nihil ad rem eius qui eum hic nobis consequuntur <br> et eaque quas ipsam veritatis fugit blanditiis, voluptatum veniam.</p>
+    <div class="poiner">
+        <p >Lorem, ipsum dolor sit amet <b> consectetur </b>adipisicing elit. <br> Enim labore reprehenderit eveniet nihil <i> ad rem eius qui</i> eum hic nobis consequuntur <br> et eaque quas ipsam veritatis fugit blanditiis, voluptatum veniam.</p>
+    </div>
 <form action="">
 <table border="1" cellspasing="1">
     <tr>
@@ -15,11 +20,11 @@
         <fieldset>
             <legend>Пользователь</legend>
             
-                <label for="username"><b>*Имя:</b></labe>
+                <label for="username" class="main-text"><b>*Имя:</b></labe>
                 <br>
                 <input type="text" name="user" placeholder="Введите имя" id="username"required>
                 <br>    
-                <label for="email"><b>*Email:</b></label>
+                <label for="email" class="main-text2"><b>*Email:</b></label>
                 <br>
                 <input type="email" name="email" id="email"required>
                 <br>
@@ -33,10 +38,10 @@
     <tr>
         <td>
                 <fieldset>                    
-                    <legend>Интересы</legend>
-                    <label><input type="checkbox" name="FrontEnd" id="FrontEnd" checked> FrontEnd</label>
+                    <legend class="main-text">Интересы</legend>
+                    <label><input type="checkbox" name="FrontEnd" id="FrontEnd" class="poiner" checked> FrontEnd</label>
                     <br>
-                    <label><input type="checkbox" name="BackEnd" id="BackEnd" checked> BackEnd</label>
+                    <label class="main-text"><input type="checkbox" name="BackEnd" id="BackEnd" checked> BackEnd</label>
                     <br>
                     <label><input type="checkbox" name="qa" id="qa" checked>QA</label>
                     <br>
@@ -76,7 +81,7 @@
     
     <tr>
         <td colspan="2">
-            <label for="learningObjectives">Цели обучения</label>
+            <label for="learningObjectives" class="main-text">Цели обучения</label>
             <textarea name="learningObjectives" id="learningObjectives" cols="75" rows="5" maxlength="200" wrap="soft" placeholder="на пример: Хочу Бали"></textarea>
         </td>
     </tr>

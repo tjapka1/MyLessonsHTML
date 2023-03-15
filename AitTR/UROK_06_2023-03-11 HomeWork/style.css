@@ -1,0 +1,38 @@
+.main{
+
+}
+
+
+
+.title-block{
+    background: transparent;
+    margin-top: -35px;
+    margin-bottom: -55px;
+    padding-left: 50px;
+}
+
+.header-msg{
+background: linear-gradient(green, yellow);
+margin-top: -55px;
+margin-bottom: -15px;
+padding-left: 100px;
+padding-top: 30px;
+}
+
+h1{
+    font-size: 48px;
+    font-style: italic;
+    color: #11079b;
+}
+p{
+    font-style: italic;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    color: #11079b;
+}
+h3{
+    color: blue;
+}

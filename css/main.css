@@ -3,7 +3,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .header{
-    border: 15px;
+    border: 3px solid;
+    border-color: goldenrod;
     background-color: bisque;
 }
 
@@ -17,31 +18,61 @@
 
 .info-text{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 15px;
-    border-color: red;
+    border: 1px solid red;
     background-color: bisque;
 
 }
 .linksborder{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 50%;
-    border: 15px;
+    text-align: center;
+    border: 1px solid black;
     background-color: bisque;
 }
-.homebord{
-
-    border: 10px;
-    margin-top: 10px;
-    margin-right: 650px;
+.linksLabel{
     margin-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+   text-align: center;
+}
+.homebord{
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    left: 42%;
+    text-align: center;
+    width: 100px;
     background-color: rgb(212, 120, 0); 
     
+}
+
+.homebordLabel{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.homebord1{
+    margin-bottom: 10px;
+    border: 2px solid;
+}
+
+.yt{
+    position: relative;
+    top: 23px;
+}
+
+.yt-text{
+    margin-top: 130px;
+}
+.youtube{
+    margin: 10px;
+}
+.vid{
+    display: inline-block;
+    margin: 2px;
 }

@@ -1,0 +1,41 @@
+body{
+    background:#e1eec3;
+    padding: 25px;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: flex;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.flex-item{
+    padding: 10px;
+    font: 18px "Roboto", sans-serif;
+    color: black;
+    /* text-align: center; */
+    /* text-shadow: 4px 2px 0 rgba(0,0,0,0.2); */
+}
+.header{
+    font:32px "Verdana", sans-serif;
+    text-align: center;
+    border: 10px solid rgba(224, 176, 52, 0.5);
+    background: linear-gradient(45deg, #e1eec3, #f05053);
+}
+.Body{
+    font: 18px "Arial";
+    color: black;
+    text-align: left;
+    border: 5px solid;
+    background: linear-gradient(45deg, #84fab0, #8fd3f4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button{
+    text-align: center;
+    border: 10px solid ;
+    background: linear-gradient(45deg, #d4fc79, #96e6a1);
+}

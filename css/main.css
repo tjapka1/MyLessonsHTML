@@ -1,7 +1,20 @@
 .body1{
     background-color: antiquewhite;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
 }
+
+.flex-container{
+    margin: 10px;
+    padding: 5px;
+}
+
+.flex-item{
+    padding: 5px;
+    font: 900 18px "Roboto", sans-serif;
+    color: black;
+       
+}
+
 .header{
     border: 3px solid;
     border-color: goldenrod;
@@ -17,49 +30,44 @@
 }
 
 .info-text{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 2px;
     border: 1px solid red;
     background-color: bisque;
-
+    text-align: left;
 }
+
+
+.linksLabel{
+    margin-top: 5px;
+    margin-bottom: 5px;
+   text-align: center;
+}
+
 .linksborder{
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
     border: 1px solid black;
     background-color: bisque;
+
 }
-.linksLabel{
-    margin-bottom: 10px;
-   text-align: center;
-}
-.homebord{
+.homeworkLins{
     border: 2px solid black;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    position: absolute;
-    left: 42%;
-    text-align: center;
-    width: 100px;
+    padding: 10px;    
+    text-align: left;
+    
     background-color: rgb(212, 120, 0); 
     
 }
 
-.homebordLabel{
-    margin-bottom: 10px;
-    text-align: center;
-}
-.homebord1{
-    margin-bottom: 10px;
-    border: 2px solid;
-}
+/* 
+
 
 .yt{
     position: relative;
@@ -75,4 +83,4 @@
 .vid{
     display: inline-block;
     margin: 2px;
-}
+} */

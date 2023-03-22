@@ -59,28 +59,24 @@
     border: 2px solid black;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 10px;    
+    padding: 2px;    
     text-align: left;
     
     background-color: rgb(212, 120, 0); 
+    display: flex;
+    
     
 }
-
-/* 
-
-
-.yt{
-    position: relative;
-    top: 23px;
+.hw1{
+    flex-direction: column;
+    padding: 2px;
+    width: 140px;
 }
+
 
 .yt-text{
-    margin-top: 130px;
+    
 }
 .youtube{
-    margin: 10px;
+  
 }
-.vid{
-    display: inline-block;
-    margin: 2px;
-} */

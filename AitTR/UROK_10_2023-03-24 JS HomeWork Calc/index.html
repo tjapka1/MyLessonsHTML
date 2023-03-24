@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="indexSkrypt.js" defer></script>
+    <title>Calculator</title>
+
+</head>
+<body>
+    <div class="flex-container">
+       
+         <div class="flex-item header">
+            <div class="header-text">
+                <h1>Домаха к 10 Уроку</h1>
+            </div>
+        </div>
+        
+            
+        <div class="container">
+                
+                <div class="item main-text">
+                            <p>В этом поле молжно задать Математический пример и нажав на кнопку получить ответ.
+                            <br>
+                            <br>
+                            Решение производиться функции eval.    
+                            </p>
+                </div>
+
+                        <label class="label" for="tv1">Введите  пример напирме: <b>2+2*5.6-2</b> и нажмите на Решить пример</label>
+
+                        <div id="tv1" class="item input"><form name="form1"><input type="text" name="textview1"></form></div>
+                    
+                <div class="item  btn">
+                        <button id="solwe">Решить пример</button>
+                        <button id="clear">Очистить поле</button>
+                </div>
+                        <label class="label" for="tv2">И сдесь вы получите Результат <b>11.2</b></label>
+                        <div id="tv2" class="item input"><form name="form2"><input type="text" name="textview2" readonly></form></div>
+
+                <div class="item  btn">
+                        <button id="clearRes">Очистить поле с результатом</button>
+                        <button id="clearAll">Очистить все поля</button>
+                </div>
+
+                <div class="item main-text">
+                    <p>Также я написал, подглядывая у других свой перрвый Калькулятор
+                    <br>
+                    <br>
+                    Решение производиться функции eval.    
+                    </p>
+
+                    <div class="container1">
+                        <div class="item1 input"><form name="calc"><input type="text" name="calcview" readonly></form></div>
+                        <div class="item1 clean" onclick ="clean()">C</div>
+                        <div class="item1 back" onclick ="back()">&larr;</div>
+                        <div class="item1" onclick ="insert('+')">+</div>
+                        <div class="item1" onclick ="insert('-')">-</div>
+                        <div class="item1" onclick ="insert('*')">&times;</div>
+                        <div class="item1" onclick ="insert('/')">&divide;</div>
+                        <div class="item1" onclick ="insert('7')">7</div>
+                        <div class="item1" onclick ="insert('8')">8</div>
+                        <div class="item1" onclick ="insert('9')">9</div>
+                        <div class="item1" onclick ="insert('(')">(</div>
+                        <div class="item1" onclick ="insert('4')">4</div>
+                        <div class="item1" onclick ="insert('5')">5</div>
+                        <div class="item1" onclick ="insert('6')">6</div>
+                        <div class="item1" onclick ="insert(')')">)</div>
+                        <div class="item1" onclick ="insert('1')">1</div>
+                        <div class="item1" onclick ="insert('2')">2</div>
+                        <div class="item1" onclick ="insert('3')">3</div>          
+                        <div class="item1 equal" onclick ="equal()">=</div>
+                        <div class="item1 zero" onclick ="insert('0')">0</div>
+                        <div class="item1" onclick ="insert('.')">.</div>
+                    </div>
+                
+        </div>
+         
+               
+        </div>
+    
+</body>
+</html>

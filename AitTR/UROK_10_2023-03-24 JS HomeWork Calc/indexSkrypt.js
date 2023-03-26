@@ -83,6 +83,7 @@ function isValid2(s){
         }
         if (s[i] == ')') {
             count=count-1;
+            function isClosedBreak(ch){
         }
         if(count<0){
 
@@ -94,7 +95,7 @@ function isValid2(s){
         else if(count==0){return true;}
     }
 }
-
+}
 
 
 console.log(s1, isValid2(s1));
@@ -104,3 +105,22 @@ console.log(s3, isValid(s3));
 console.log(s4, isValid(s4));
 console.log(s5, isValid(s5));
 console.log(s6, isValid(s6));
+
+
+
+document.querySelector('#next').onclick  = function (){ 
+var fN=document.querySelector('#firstName').value;
+var lN=document.querySelector('#lastName').value;
+console.log(fN +" "+ lN);
+new AddUser(fN, lN)
+}
+
+// let allUser={
+//     firstName;
+//     lastName=
+// }
+function AddUser(firstName, lastName ) {
+    this.firstName=firstName;
+    this.lastName=lastName;
+
+}

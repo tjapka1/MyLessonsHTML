@@ -20,15 +20,65 @@
         
             
         <div class="container">
+
+                <div class="item main-text">
+                        <h2>Задача 1</h2>
+                                <p> 
+                                Пользователь на странице вводит (используйте например input text) скобочную последовательность (ну т.е. выражение содержащее скобки). Например так {[(12+3) + (11-1)] - [23-23]}  или просто скобки [(){}]. Ваша задача написать функцию, которая проверяет, что скобочная последовательность является корректной, т.е. каждой открывающей скобке соответствует закрывающая и нет нарушений вложенности скобок (например, не должно быть такого ({)}  )
+                                Возможны 3 вида скобок: () {} []  или, если хотите, более простой вариант, только один вид скобок.
+                                </p>
+                        <div class="checkData">
+                                <fieldset>
+                                        <legend>Проверка текста</legend>
+                                            
+                                        <label for="checkTextIn" class="main-text"><b>Текст: [....], {...}, (...)</b></label>
+                                        <br>
+                                        <input type="text" name="checkText" placeholder="Введите текст [....], {...}, (...)" id="checkTextIn" class="checkTextIn">
+                                        <br>    
+                                        <div class="item  btn">
+                                                <button id="checkTextIDBtn">Проверка Текста</button>
+                                                
+                                        </div>
+                                        <div ><form name="checktextRes"><input type="text" name="resview" readonly></form></div>
+                                </fieldset>
+                        </div>
+                                <h2>Задача 2</h2>
+                                 <p>
+                                Реализовать на странице 2 поля для ввода: first name и last name и две кнопки:
+                                next и finish. По нажатию на кнопку next ваша функция должна:
+                                - создавать объект {firstName, lastName}  
+                                - добавлять его в массив users 
+                                По нажатию на кнопку finish на странице должны отображаться в виде списка все введенные пользователи.
+                                 </p>
+
+                        <div class="personData">
+                                <fieldset>
+                                        <legend>Персональные данные</legend>
+                                        <label for="firstName" class="main-text"><b>Имя:</b></label>
+                                        <input type="text" name="firstName" placeholder="Firstname" id="firstName">
+                                        <label for="lastName" class="main-text"><b>Фамилия:</b></label>
+                                        <input type="text" name="lastName" placeholder="lastname" id="lastName">
+
+                                        <div class="item  btn">
+                                                <button id="next">Next</button>
+                                                <button id="finish">Finish</button>
+                                                
+                                        </div>
+                                </fieldset>
+                        </div>
+
+                </div>
                 
                 <div class="item main-text">
+                        <h2>Решение примеров</h2>
                             <p>В этом поле молжно задать Математический пример и нажав на кнопку получить ответ.
                             <br>
                             <br>
                             Решение производиться функции eval.    
                             </p>
-                </div>
-
+                
+                        <fieldset>
+                        <legend>Пример</legend>
                         <label class="label" for="tv1">Введите  пример напирме: <b>2+2*5.6-2</b> и нажмите на Решить пример</label>
 
                         <div id="tv1" class="item input"><form name="form1"><input type="text" name="textview1"></form></div>
@@ -44,14 +94,19 @@
                         <button id="clearRes">Очистить поле с результатом</button>
                         <button id="clearAll">Очистить все поля</button>
                 </div>
+                </fieldset>
+                </div>
 
                 <div class="item main-text">
+                        <h2>Мой первый лёгкий Калькулятор</h2>
                     <p>Также я написал, подглядывая у других свой перрвый Калькулятор
                     <br>
                     <br>
                     Решение производиться функции eval.    
                     </p>
 
+                    <fieldset>
+                        <legend>Калькулятор</legend>
                     <div class="container1">
                         <div class="item1 input"><form name="calc"><input type="text" name="calcview" readonly></form></div>
                         <div class="item1 clean" onclick ="clean()">C</div>
@@ -75,6 +130,8 @@
                         <div class="item1 zero" onclick ="insert('0')">0</div>
                         <div class="item1" onclick ="insert('.')">.</div>
                     </div>
+                </fieldset>
+                
                 
         </div>
          

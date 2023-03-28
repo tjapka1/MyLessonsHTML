@@ -51,54 +51,34 @@ let s6 = '{[[]{}]}()()';
 
 
 function isValid (s){
-    let stack=[];
 
-    let brackets = {
-        ')':'(',
-        '}':'{',
-        ']':'[',
-    }
-    for( let i = 0; i<s.length; i++){
-        const current = s[i];
-        if(isClosedBreak(current)){
-            if(brackets[current] !== stack.pop()) return false;
-    }else{checkTextIn
-        stack.push(current);
-    }
-}
-    return stack.length === 0;
-}
+    const stack=[];
+    const openBrackets={};
 
-function isClosedBreak(ch){
-    return [')','}',']'].indexOf(ch) > -1;
-}
+    openBrackets["{"]="}";
+    openBrackets["("]=")";
+    openBrackets["["]="]";
 
-function isValid2(s){
-    
-    let count = 0;
+    const closeBrackets={};
+    closeBrackets["}"]="{";
+    closeBrackets[")"]="(";
+    closeBrackets["]"]="[";
 
-    for( let i = 0; i<s.length; i++){
-        if (s[i] == '(') {
-            count++;
+
+    for(let i=0; i<s.length; i++){
+        const char = s.charAt(i);
+        if(char in openBrackets){
+            stack.push(openBrackets[char]);
+        } else if(char in closeBrackets){
+            const lastCloseBracket = stack.pop();
+            if (lastCloseBracket !== char) return false;
         }
-        if (s[i] == ')') {
-            count=count-1;
-            function isClosedBreak(ch){
-        }
-        if(count<0){
-
-            break;
-        }
-        console.log(count);
-        if(count >0){return false;}
-        else if(count <0){return false;}
-        else if(count==0){return true;}
     }
-}
+    return stack.length===0;
 }
 
 
-console.log(s1, isValid2(s1));
+console.log(s1, isValid(s1));
 console.log(s1, isValid(s1));
 console.log(s2, isValid(s2));
 console.log(s3, isValid(s3));
@@ -108,19 +88,68 @@ console.log(s6, isValid(s6));
 
 
 
-document.querySelector('#next').onclick  = function (){ 
-var fN=document.querySelector('#firstName').value;
-var lN=document.querySelector('#lastName').value;
-console.log(fN +" "+ lN);
-new AddUser(fN, lN)
+// document.querySelector('#next').onclick  = function (){ 
+// var fN=document.querySelector('#firstName').value;
+// var lN=document.querySelector('#lastName').value;
+// console.log(fN +" "+ lN);
+// new AddUser(fN, lN)
+// }
+
+// // let allUser={
+// //     firstName;
+// //     lastName=
+// // }
+// function AddUser(firstName, lastName ) {
+//     this.firstName=firstName;
+//     this.lastName=lastName;
+
+// }
+
+
+const nextBtn= document.getElementById("btn_next");
+const finishBtn= document.getElementById("btn_finish");
+const inputFirstName= document.getElementById("firstName");
+const inputLastName= document.getElementById("lastName");
+const users=[];
+
+
+
+nextBtn.addEventListener("click", ()=>{
+    const firstName = inputFirstName.value.trim();
+    const lastName = inputFirstName.value.trim();
+console.log(firstName +" " + lastName);
+
+    if(firstName!=="" & lastName!==""){
+        createUser(firstName,lastName);
+        inputFirstName.value="";
+        inputLastName.value="";
+        console.log(users);
+    }
+});
+
+finishBtn.addEventListener( "click",()=>printUsersList());
+
+
+
+const createUser= function(firstName,lastName){
+    if(firstName!=="" & lastName!==""){
+        const user ={
+            firstName,
+            lastName
+        };
+
+        users.push(user);
+    }
 }
 
-// let allUser={
-//     firstName;
-//     lastName=
-// }
-function AddUser(firstName, lastName ) {
-    this.firstName=firstName;
-    this.lastName=lastName;
-
+function printUsersList(){
+    const resultBlock= document.getElementById("result");
+    if(users.length>0){
+        let html=`<h2>User List</h2><ol class="user-list">`;
+        users.forEach((e)=>{
+           html+=`<li>${e.firstName} ${e.lastName}</li>`     
+        } );
+        html+="</ol>";
+        resultBlock.innerHTML=html;
+    }
 }

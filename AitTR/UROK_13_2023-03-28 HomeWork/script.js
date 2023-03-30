@@ -1,35 +1,49 @@
-let serverSchool = false;
+function createSchoolObject(){
+const school = {};
 
-let promise = new Promise(function(resolve, reject){
-    console.log("отправляем данные в Школу");
+    return new Promise( (resolve, reject) => {
+        setTimeout(()=> {
+            school.title="ait-tr";
+            console.log(0, school); 
+            resolve(school);
+        }, 1_000)}).then( (school) =>{
+            return new Promise((resolve, reject) =>{
+                setTimeout(()=> {
+                    school.site="ait-tr.de";
+                    console.log(1, school); 
+                    resolve(school);
+                }, 1_000); 
+            });
+        }).then((school) => {
+            return new Promise((resolve, reject) =>{
+                setTimeout(()=> {
+                    school.email="info@ait-tr.de";
+                    console.log(2, school); 
+                    resolve(school);
+                }, 1_000); 
+            });
+        }).then((school) => {
+            return new Promise((resolve, reject) =>{
+                setTimeout(()=> {
+                    school.telefon="+49123654789654";
+                    console.log(2, school); 
+                    resolve(school);
+                }, 1_000); 
+            });
+        }).then((school) =>{
+                return new Promise((resolve, reject) =>{
+                    const value = confirm("Подтвердите создание объекта");
+                    if(value){
+                        resolve(school);   
+                    } else {
+                        reject("отказ от создания");
+                    };
+                });
+            });
+    }   
 
-    if(serverSchool){
-
-        setTimeout(()=>{
-
-            let school = {
-                tite:"ait-tr", 
-                site:"ait-tr.de",
-                phone:"+493052014182", 
-                email:"go@ait-tr.de" 
-            }
-            resolve(school)},7000);
-        }else{
-            setTimeout(()=>reject ("сервак на отдыхе!"), 3000);
-    }
-    
-});
-
-promise.then(
-    function(school){
-        console.log("отправлено");
-        console.log(school);
-    }
-);
-
-promise.catch(
-    function(error){
-        console.log("Ощибка сервака");
-        console.log(error);
-    }
-);
+    const promise = createSchoolObject();
+promise.then((school=>{
+    console.log(school);
+}));
+promise.catch((error)=> console.log(error));

@@ -1,0 +1,35 @@
+body{
+    background-color: aquamarine;
+}
+.flex-container{
+    border: 5px solid black;
+    padding: 5px;
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+.flex-item{
+    font: 18px "Arial", sans=serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header{
+    border: 2px solid black;
+    padding: 5px;
+    background-image: linear-gradient(45deg, #ff8177, #cf556c);
+    margin: 5px;
+}
+.header-text{
+    text-align: right;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.btn{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
+
+
+

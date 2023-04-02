@@ -36,9 +36,11 @@ function changeImage(){
 
 function play(){
 let playInter=window.setInterval(changeImage, 1000);
+return playInter;
 }
 
 function stop(){
+    let playInter=play();
     window.clearInterval(playInter);
     }
 

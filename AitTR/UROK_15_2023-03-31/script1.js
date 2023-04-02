@@ -56,9 +56,9 @@ async function getMeteo(){
 btn_checkWeather.addEventListener('click', () => {
     displey.innerHTML = `
     <div class="weatherOut1">
-    <a>Температура в ${location.city} сегодня {temp} градусов.</a><br>
-    <a>Описание " + {code}.</a><br>
-    <a>Ветер {winf} метров в сек</a>
+    <a>Температура в ${location.city} сегодня ${temp} градусов.</a><br>
+    <a>Описание " + ${code}.</a><br>
+    <a>Ветер ${winf} метров в сек</a>
     </div>
         `;})
 

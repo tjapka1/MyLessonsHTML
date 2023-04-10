@@ -16,7 +16,7 @@ root.render(
     <Header/>
     <Sada/>
     <TextIn />
- 
+    <TextOu/> 
     
   </div>
 );

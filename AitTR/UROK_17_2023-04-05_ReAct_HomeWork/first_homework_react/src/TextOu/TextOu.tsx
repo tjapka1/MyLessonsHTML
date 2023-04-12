@@ -1,25 +1,19 @@
+import React from "react";
 import './TextOu.css';
-type Param = {msg:string};
 
-function TextOu(p:Param){
+type Props = {msg:string};
 
-
-
+function TextOu({msg}:Props){
   return (
 
-  <div >
-    <div className="body">
-      <p>
+  <div className="ouTextbody">
+    <div className="label">
         Вы ввели в поле:
-      </p>
-
-      <div className="ouTextDiv">
-        <p>
-          
-        </p>   
-          
-      </div>      
     </div>
+    <div className="ouText">
+      {msg}
+    </div>    
+      
   </div>
       
 )

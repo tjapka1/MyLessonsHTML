@@ -1,24 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
 //import App from './App/App';
-import TextIn from './TextIn/TextIn';
-import TextOu from './TextOu/TextOu';
-import Header from './Header/Header';
-import Sada from './Sada/Sada';
+import List from './List/List';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <div>
-    <Header/>
-    <Sada/>
-    <TextIn />
-    
-    
-  </div>
+  <React.StrictMode>
+    <List />
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

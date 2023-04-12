@@ -2,7 +2,7 @@ import "./Sada.css";
 
 function Sada() {
   return (
-    <div className="body">
+    <div className="sadaBody">
 
       <div className="sada">
         <ol>

@@ -4,14 +4,11 @@ function Header(){
 
 
 
-  return (
-  <div >
-      <div className="header">
-        <div className="header-text">
-                <h1>Домаха к 17 Уроку</h1>
-            </div>
-      </div>
-      
+return (
+  <div className="headerBody">
+    <div className="header-text">
+      <h1>Домаха к 17 Уроку</h1>
+    </div>
   </div>
 )
 }

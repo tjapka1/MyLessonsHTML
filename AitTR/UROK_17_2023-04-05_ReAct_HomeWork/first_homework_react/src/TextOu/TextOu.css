@@ -1,7 +1,26 @@
-.body {
+.ouTextbody {
   border: 2px solid black;
   padding: 5px;
   background-image: linear-gradient(45deg, #ff8177, #cf556c);
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 
+}
+
+.ouTextDiv {
+  padding: 5px;
+}
+
+.label{
+  text-align: center;
+  font-size: 25px;
+}
+.ouText {
+  margin: 5px;
+  height: 45px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #ff8177;
+  border: 1px solid black;
+  border-radius: 5px;
 }

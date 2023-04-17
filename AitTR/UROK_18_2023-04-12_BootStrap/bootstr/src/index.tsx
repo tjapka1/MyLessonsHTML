@@ -4,14 +4,26 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 //import App from './App/App';
 import List from './List/List';
+import Msg from './Msg/Msg';
+import Users from "./Users/Users";
+import Posts from "./Post/Post";
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+let names: string[] = ["Jack", "John", "Lena", "Ann","qwe"];
+let cities: string[] = ["Berlin", "Paris", "Vena"];
 root.render(
   <React.StrictMode>
-    <List />
+    <>
+    <List names={names} heading="Имена"/>
+    <List names={cities} heading="Города"/>
+    <Msg/>
+    <Users/>
+    <Posts/>
+    </>
   </React.StrictMode>
 );
 

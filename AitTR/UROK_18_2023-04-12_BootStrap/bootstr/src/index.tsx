@@ -7,24 +7,23 @@ import List from './List/List';
 import Msg from './Msg/Msg';
 import Users from "./Users/Users";
 import Posts from "./Post/Post";
+import MyApp from "./MyApp/MyApp";
 
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
-let names: string[] = ["Jack", "John", "Lena", "Ann","qwe"];
-let cities: string[] = ["Berlin", "Paris", "Vena"];
+//let names: string[] = ["Jack", "John", "Lena", "Ann","qwe"];
+//let cities: string[] = ["Berlin", "Paris", "Vena"];
 root.render(
-  <React.StrictMode>
-    <>
-    <List names={names} heading="Имена"/>
-    <List names={cities} heading="Города"/>
-    <Msg/>
-    <Users/>
-    <Posts/>
-    </>
-  </React.StrictMode>
+  
+    <BrowserRouter>
+      <MyApp/>
+
+    </BrowserRouter>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function

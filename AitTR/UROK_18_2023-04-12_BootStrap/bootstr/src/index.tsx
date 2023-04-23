@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import List from './List/List';
 import Msg from './Msg/Msg';
 import Users from "./Users/Users";
-import Posts from "./Post/Post";
+import Posts from "./Posts/Post";
 import MyApp from "./MyApp/MyApp";
 
 import reportWebVitals from './reportWebVitals';

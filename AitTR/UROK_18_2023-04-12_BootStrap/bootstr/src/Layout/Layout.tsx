@@ -14,9 +14,13 @@ const navigate = useNavigate();
         <button type="button" className="btn btn-outline-primary" 
                 onClick={()=>navigate('/users/')}>Пользователи</button>
         <button type="button" className="btn btn-outline-primary" 
+                onClick={()=>navigate('/userPosts/')}>Посты Пользователя</button>        
+        <button type="button" className="btn btn-outline-primary" 
                 onClick={()=> navigate('/msg/')}>Сообщение</button>
         <button type="button" className="btn btn-outline-primary" 
                 onClick={()=> navigate('/post/')}>Посты</button>
+        <button type="button" className="btn btn-outline-primary" 
+                onClick={()=> navigate('/bootstrap/')}>Бутстрап</button>        
         <button type="button" className="btn btn-outline-primary" 
                 onClick={()=> navigate('/')}>Домой</button>
         <button type="button" className="btn btn-outline-primary" 

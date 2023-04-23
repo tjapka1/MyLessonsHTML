@@ -19,9 +19,12 @@ const navigate = useNavigate();
           <Link to = "/post/">
             <li>Посты</li>
           </Link>
+          <Link to ="/bootstrap/">
+            <li>бутстрап</li>
+          </Link>
+          <Outlet />
         </ul>
-
-         
+        
       </div>
       <Outlet/>
     </div>
